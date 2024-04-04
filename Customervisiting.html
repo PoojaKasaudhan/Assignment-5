@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Departmental Store Customer Information Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    .container {
+        width: 50%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    form {
+        margin-top: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+    }
+    input[type="text"],
+    input[type="tel"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Customer Information Form</h2>
+    <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Contact Phone No:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Enter 10-digit phone number">
+
+        <label for="days">Preferred Days of Purchasing:</label>
+        <input type="text" id="days" name="days">
+
+        <label for="item">Favorite Item:</label>
+        <select id="item" name="item">
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="groceries">Groceries</option>
+            <option value="books">Books</option>
+            <option value="toys">Toys</option>
+        </select>
+
+        <label for="suggestions">Suggestions:</label>
+        <textarea id="suggestions" name="suggestions" rows="4"></textarea>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</div>
+
+</body>
+</html>
